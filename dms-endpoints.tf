@@ -14,11 +14,9 @@ resource "aws_dms_endpoint" "default" {
   extra_connection_attributes = ""
   ssl_mode                    = try(var.ssl_mode, "none")
   
-#   tags {
-#     Name        = "${var.stack_name}-dms-${var.environment}-source"
-#     owner       = "${var.owner}"
-#     stack_name  = "${var.stack_name}"
-#     environment = "${var.environment}"
-#     created_by  = "terraform"
-#   }
+  tags {
+    Name        = var.endpoint_type
+    Environment = var.environment_name
+    Managed_by  = "Terraform"
+  }
 }
