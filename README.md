@@ -22,6 +22,7 @@
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | allocated\_storage | The amount of storage (in gigabytes) to be initially allocated for the replication instance | `number` | `50` | no |
+| availability\_zone | The EC2 Availability Zone that the replication instance will be created in | `any` | n/a | yes |
 | certificate\_arn | The Amazon Resource Name (ARN) for the certificate | `any` | n/a | yes |
 | database\_name | The name of the endpoint database | `any` | n/a | yes |
 | endpoint\_id | The database endpoint identifier | `any` | n/a | yes |
@@ -32,9 +33,14 @@
 | kms\_key\_arn | KMS Key ARN to use a CMK instead of default shared key, when storage\_encrypted is true | `string` | `""` | no |
 | password | The password to be used to login to the endpoint database | `any` | n/a | yes |
 | port | The port used by the endpoint database | `any` | n/a | yes |
+| preferred\_maintenance\_window | The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC) | `string` | `"none"` | no |
+| replication\_instance\_class | The compute and memory capacity of the replication instance as specified by the replication instance class | `string` | `"none"` | no |
+| replication\_instance\_id | The replication instance identifier | `any` | n/a | yes |
+| replication\_subnet\_ids | A list of the EC2 subnet IDs for the subnet group | `any` | n/a | yes |
 | server\_name | The host name of the server | `any` | n/a | yes |
 | ssl\_mode | The SSL mode to use for the connection. Can be one of none \| require \| verify-ca \| verify-full | `string` | `"none"` | no |
 | username | The user name to be used to login to the endpoint database | `any` | n/a | yes |
+| vpc\_security\_group\_ids | A list of VPC security group IDs to be used with the replication instance | `any` | n/a | yes |
 
 ## Outputs
 
