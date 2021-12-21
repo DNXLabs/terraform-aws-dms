@@ -14,8 +14,8 @@ resource "aws_dms_endpoint" "default" {
   extra_connection_attributes = ""
   ssl_mode                    = try(var.ssl_mode, "none")
   
-  tags = {
-    "Name"        = var.endpoint_type
-    "Managed_by"  = "Terraform"
-  }
+  # tags = {
+  #   "Name"        = var.endpoint_type
+  #   "Managed_by"  = "Terraform"
+  # }
 }
