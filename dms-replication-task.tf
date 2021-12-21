@@ -9,9 +9,9 @@
 #   source_endpoint_arn       = aws_dms_endpoint.test-dms-source-endpoint-tf.endpoint_arn
 #   table_mappings            = "{\"rules\":[{\"rule-type\":\"selection\",\"rule-id\":\"1\",\"rule-name\":\"1\",\"object-locator\":{\"schema-name\":\"%\",\"table-name\":\"%\"},\"rule-action\":\"include\"}]}"
 
-#   tags = {
-#     Name = "test"
-#   }
+# #   tags = {
+# #     Name = ""
+# #   }
 
 #   target_endpoint_arn = aws_dms_endpoint.test-dms-target-endpoint-tf.endpoint_arn
 # }
