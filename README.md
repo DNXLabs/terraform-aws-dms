@@ -26,6 +26,7 @@
 | endpoint\_id | The database endpoint identifier | `any` | n/a | yes |
 | endpoint\_type | Endpoint type: `source` or `target` | `any` | n/a | yes |
 | engine\_name | The type of engine for the endpoint. Can be one of aurora \| aurora-postgresql\| azuredb \| db2 \| docdb \| dynamodb \| elasticsearch \| kafka \| kinesis \| mariadb \| mongodb \| mysql \| oracle \| postgres \| redshift \| s3 \| sqlserver \| sybase | `string` | `""` | no |
+| environment\_name | Environment name to use as a prefix to this Endpoint | `string` | n/a | yes |
 | extra\_connection\_attributes | Additional attributes associated with the connection | `any` | n/a | yes |
 | kms\_key\_arn | KMS Key ARN to use a CMK instead of default shared key, when storage\_encrypted is true | `string` | `""` | no |
 | password | The password to be used to login to the endpoint database | `any` | n/a | yes |
