@@ -46,7 +46,7 @@ variable "extra_connection_attributes" {
 
 variable "ssl_mode" {
   description = "The SSL mode to use for the connection. Can be one of none | require | verify-ca | verify-full"
-  default = "none"
+  default     = "none"
 }
 
 variable "environment_name" {
