@@ -37,7 +37,9 @@
 
 ## Outputs
 
-No output.
+| Name | Description |
+|------|-------------|
+| endpoint\_arn | n/a |
 
 <!--- END_TF_DOCS --->
 
